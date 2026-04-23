@@ -76,7 +76,7 @@ export default function Testimonials() {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.6, delay: index * 0.12, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ duration: 0.6, delay: index * 0.12, ease: "easeOut" }}
               className="relative flex flex-col bg-white/[0.03] border border-white/[0.07] rounded-2xl p-6 hover:border-accent/20 transition-colors duration-300"
             >
               {/* Quote mark */}

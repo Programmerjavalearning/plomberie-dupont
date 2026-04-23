@@ -72,7 +72,7 @@ export default function WhyUs() {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.6, delay: index * 0.15, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ duration: 0.6, delay: index * 0.15, ease: "easeOut" }}
               className="relative flex flex-col items-center text-center p-8 rounded-2xl border border-white/[0.07] bg-white/[0.025] hover:border-accent/30 transition-all duration-300 group"
             >
               {/* Number */}
