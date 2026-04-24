@@ -25,7 +25,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-[100px]"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-28 sm:pt-32"
       style={{ background: "linear-gradient(135deg, #0a0f1a 0%, #0d1929 50%, #0a0f1a 100%)" }}
     >
       {/* Blue night overlay */}
@@ -231,14 +231,14 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.75 }}
-          className="mt-16 flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-12"
+          className="mt-16 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12"
         >
           {[
             { value: "+500", label: "clients satisfaits" },
             { value: "< 1h", label: "délai d'intervention" },
             { value: "10 ans", label: "de garantie" },
           ].map((stat) => (
-            <div key={stat.label} className="text-center">
+            <div key={stat.label} className="text-center py-4">
               <p className="text-2xl font-extrabold text-accent">{stat.value}</p>
               <p className="text-xs text-white/50 uppercase tracking-wider mt-0.5">{stat.label}</p>
             </div>
